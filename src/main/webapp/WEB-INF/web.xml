@@ -3,4 +3,70 @@
 <display-name>A1 Electronics ecommerce</display-name>
 <description>A1 Electronics ecommerce Application</description>
 
+	<!-- Semantic Parser -->
+	<!-- 
+	<servlet>
+		<description>Parse entry and get cloud tag.</description>
+		<display-name>MySemanticParse</display-name>
+		<servlet-name>MySemanticParse</servlet-name>
+		<servlet-class>MySemanticParse</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MySemanticParse</servlet-name>
+		<url-pattern>/servlet/MySemanticParse</url-pattern>
+	</servlet-mapping>
+	-->
+	<!-- Search Twitter -->
+	<!-- 
+	<servlet>
+		<description>Search Twitter.</description>
+		<display-name>MyTwitterSearch</display-name>
+		<servlet-name>MyTwitterSearch</servlet-name>
+		<servlet-class>MyTwitterSearch</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyTwitterSearch</servlet-name>
+		<url-pattern>/servlet/MyTwitterSearch</url-pattern>
+	</servlet-mapping>
+	-->
+	<!-- Search Yahoo -->
+	<servlet>
+		<description>Search Yahoo.</description>
+		<display-name>myYahooSearch</display-name>
+		<servlet-name>myYahooSearch</servlet-name>
+		<servlet-class>myYahooSearch</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myYahooSearch</servlet-name>
+		<url-pattern>/servlet/myYahooSearch</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Search Yahoo Images -->
+	<servlet>
+		<description>Search Yahoo Images.</description>
+		<display-name>myYahooImageSearch</display-name>
+		<servlet-name>myYahooImageSearch</servlet-name>
+		<servlet-class>myYahooImageSearch</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myYahooImageSearch</servlet-name>
+		<url-pattern>/servlet/myYahooImageSearch</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Search Google -->
+	<servlet>
+		<description>Search Google.</description>
+		<display-name>myGoogleSearch</display-name>
+		<servlet-name>myGoogleSearch</servlet-name>
+		<servlet-class>myGoogleSearch</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myGoogleSearch</servlet-name>
+		<url-pattern>/servlet/myGoogleSearch</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
 </web-app>
