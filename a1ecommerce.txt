@@ -154,7 +154,7 @@ To https://github.com/anuppunekar/ecommerce.git
 Branch devmashupapp set up to track remote branch devmashupapp from mashupapp.
 
 
-D:\downloads\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" log                           
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" log                           
 commit 269a4812092b406df50cca8eaa5ec13f9c32ee0d
 Author: anuppunekar <anup.punekar@gmail.com>
 Date:   Mon Dec 29 00:46:05 2025 +0530
@@ -269,3 +269,73 @@ Date:   Fri Nov 14 15:02:25 2014 +0530
 
     Initial commit
 (END)
+
+
+
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" branch 
+* devmashupapp
+  master      
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" remote 
+mashupapp
+origin
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" add .
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" commit -m "Created"
+[devmashupapp d922cea] Created
+ 10 files changed, 345 insertions(+), 34 deletions(-)
+ create mode 100644 a1ecommerce.txt
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" log   
+commit d922ceabe84b558bc84460251cee89f1728815b0
+Author: anuppunekar <anup.punekar@gmail.com>
+Date:   Sun Jan 4 00:20:45 2026 +0530
+
+    Created
+
+commit 269a4812092b406df50cca8eaa5ec13f9c32ee0d
+Author: anuppunekar <anup.punekar@gmail.com>
+Date:   Mon Dec 29 00:46:05 2025 +0530
+
+    Created
+
+commit 3d475533e94d0c62409e99d59692a87d56b7130c
+Author: Amol Pandit <amol.pandit@woi.aero>
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" remote
+mashupapp
+origin
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" push -u mashupapp devmashupapp
+Username for 'https://github.com': anuppunekar
+Password for 'https://anuppunekar@github.com': 
+Counting objects: 22, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (22/22), 4.47 KiB | 0 bytes/s, done.
+Total 22 (delta 12), reused 0 (delta 0)
+remote: Resolving deltas: 100% (12/12), completed with 12 local objects.
+To https://github.com/anuppunekar/ecommerce.git
+   269a481..d922cea  devmashupapp -> devmashupapp
+Branch devmashupapp set up to track remote branch devmashupapp from mashupapp.
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" log    
+commit d922ceabe84b558bc84460251cee89f1728815b0
+Author: anuppunekar <anup.punekar@gmail.com>
+Date:   Sun Jan 4 00:20:45 2026 +0530
+
+    Created
+
+commit 269a4812092b406df50cca8eaa5ec13f9c32ee0d
+Author: anuppunekar <anup.punekar@gmail.com>
+Date:   Mon Dec 29 00:46:05 2025 +0530
+
+    Created
+
+commit 3d475533e94d0c62409e99d59692a87d56b7130c
+
+D:\stsProjects\a1ecommerce>   
