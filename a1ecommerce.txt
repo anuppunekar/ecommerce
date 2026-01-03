@@ -1,0 +1,271 @@
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\stsProjects>cd a1ecommerce
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" remote
+origin
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" branch             
+* devmashupapp
+  master
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" add .  
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" branch 
+* devmashupapp
+  master
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" commit -m "Created"
+[devmashupapp 269a481] Created
+ 15 files changed, 775 insertions(+), 54 deletions(-)
+ create mode 100644 .settings/org.eclipse.jdt.apt.core.prefs
+ create mode 100644 src/main/java/com/a1electronics/ecommerce/servlets/myGoogleSearch.java
+ create mode 100644 src/main/java/com/a1electronics/ecommerce/servlets/myYahooImageSearch.java
+ create mode 100644 src/main/java/com/a1electronics/ecommerce/servlets/myYahooSearch.java
+ rewrite src/main/resources/application.properties (100%)
+ create mode 100644 src/main/webapp/style.css
+ rename src/main/webapp/{WEB-INF => }/views/home.jsp (100%)
+ create mode 100644 src/main/webapp/views/index.html
+
+(END)
+(END)                                                      
+(END) 
+(END) 
+(END)
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" remote
+origin
+
+(END)
+(END)
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" log
+commit 269a4812092b406df50cca8eaa5ec13f9c32ee0d
+Author: anuppunekar <anup.punekar@gmail.com>
+Date:   Mon Dec 29 00:46:05 2025 +0530
+
+    Created
+
+commit 3d475533e94d0c62409e99d59692a87d56b7130c
+Author: Amol Pandit <amol.pandit@woi.aero>
+Date:   Thu Aug 13 21:29:14 2015 +0530
+
+    HTML for category & product listing added
+
+commit 3e7330bd81a8e61e59f733d66c92f57ff9efa8c4
+Author: Amit Shah <dummymailamit@gmail.com>
+Date:   Sat Aug 1 23:24:22 2015 +0530
+
+    Added database entries for H2. Added controllers/services to fetch products and categories
+
+commit 2e6ba9c871a24e3f3efb8b418121bcd775cadb39
+Author: Amit Shah <dummymailamit@gmail.com>
+Date:   Sun Jul 12 10:51:54 2015 +0530
+
+    Added H2 embedded DB support
+
+commit 6c0886b6eba169e6b3dd12ad9ca287694907741f
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Sun Jun 7 17:18:14 2015 +0530
+
+    added nat amazon amis
+
+commit 12c587b36c037dba40e8ce893a8eee04d10c3e0a
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Wed Apr 15 08:45:21 2015 +0530
+
+    Added AWS cloud formation script to build the complete A1 infrastructure
+
+commit cdc0a78c79bb6aa7f252c5f12bd4cb63e02363a5
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Thu Apr 9 20:27:30 2015 +0530
+
+    Modified pom file
+
+commit a119bba8da5aa07d07089e8294f4e4d3ad7ff8a7
+!
+!
+sh-4.3$ exit
+!done  (press RETURN)
+...skipping...
+Date:   Sun Jun 7 17:18:14 2015 +0530
+
+    added nat amazon amis
+
+commit 12c587b36c037dba40e8ce893a8eee04d10c3e0a
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Wed Apr 15 08:45:21 2015 +0530
+
+    Added AWS cloud formation script to build the complete A1 infrastructure
+
+commit cdc0a78c79bb6aa7f252c5f12bd4cb63e02363a5
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Thu Apr 9 20:27:30 2015 +0530
+
+    Modified pom file
+
+commit a119bba8da5aa07d07089e8294f4e4d3ad7ff8a7
+Author: Amit Shah <amit.shah@woi.aero>
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" branch 
+* devmashupapp
+  master
+
+D:\stsProjects\a1ecommerce>git push -u origin devmashupapp
+'git' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" push -u origin devmashupapp
+Username for 'https://github.com': anuppunekar
+Password for 'https://anuppunekar@github.com': 
+remote: Permission to a1electronics/ecommerce.git denied to anuppunekar.
+fatal: unable to access 'https://github.com/a1electronics/ecommerce/': The requested URL returned error: 403
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" remote add mashupapp https://github.com/anuppunekar/ecommerce.git
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" remote                                                           
+mashupapp
+origin
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" branch
+* devmashupapp
+  master
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" add .   
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" commit -m "Created"
+On branch devmashupapp
+nothing to commit, working directory clean
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" push -u mashupapp devmashupapp
+Username for 'https://github.com': anuppunekar
+Password for 'https://anuppunekar@github.com': 
+Counting objects: 28, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (28/28), 7.78 KiB | 0 bytes/s, done.
+Total 28 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas: 100% (10/10), completed with 8 local objects.
+remote:
+remote: Create a pull request for 'devmashupapp' on GitHub by visiting:
+remote:      https://github.com/anuppunekar/ecommerce/pull/new/devmashupapp
+remote:
+To https://github.com/anuppunekar/ecommerce.git
+ * [new branch]      devmashupapp -> devmashupapp
+Branch devmashupapp set up to track remote branch devmashupapp from mashupapp.
+
+
+D:\downloads\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" log                           
+commit 269a4812092b406df50cca8eaa5ec13f9c32ee0d
+Author: anuppunekar <anup.punekar@gmail.com>
+Date:   Mon Dec 29 00:46:05 2025 +0530
+
+    Created
+
+commit 3d475533e94d0c62409e99d59692a87d56b7130c
+Author: Amol Pandit <amol.pandit@woi.aero>
+Date:   Thu Aug 13 21:29:14 2015 +0530
+
+    HTML for category & product listing added
+
+commit 3e7330bd81a8e61e59f733d66c92f57ff9efa8c4
+Author: Amit Shah <dummymailamit@gmail.com>
+Date:   Sat Aug 1 23:24:22 2015 +0530
+
+    Added database entries for H2. Added controllers/services to fetch products and categories
+
+commit 2e6ba9c871a24e3f3efb8b418121bcd775cadb39
+Author: Amit Shah <dummymailamit@gmail.com>
+Date:   Sun Jul 12 10:51:54 2015 +0530
+
+    Added H2 embedded DB support
+
+commit 6c0886b6eba169e6b3dd12ad9ca287694907741f
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Sun Jun 7 17:18:14 2015 +0530
+
+    added nat amazon amis
+
+commit 12c587b36c037dba40e8ce893a8eee04d10c3e0a
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Wed Apr 15 08:45:21 2015 +0530
+
+    Added AWS cloud formation script to build the complete A1 infrastructure
+
+commit cdc0a78c79bb6aa7f252c5f12bd4cb63e02363a5
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Thu Apr 9 20:27:30 2015 +0530
+
+    Modified pom file
+
+commit a119bba8da5aa07d07089e8294f4e4d3ad7ff8a7
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Fri Jan 2 10:31:12 2015 +0530
+
+    Added create/update/delete support
+
+commit cd14a4d1ffdb8c656cc2c07f57d7355de318f3e4
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Wed Dec 31 18:40:59 2014 +0530
+
+    fixed jdbc url path
+
+commit 5db00067fa111516dedd54e5f6d29eab2c9569d1
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Wed Dec 31 12:30:24 2014 +0530
+
+    logback configured
+
+commit bd3e5c2ca3bf158121fd657998ce62489d577095
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Tue Dec 30 21:06:55 2014 +0530
+
+    Working with javaconfig
+
+commit 0a7a31cef22316923cba238ec6a2626841c66c67
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Thu Dec 25 17:34:35 2014 +0530
+
+    JPA configured
+
+commit cdb95d4c53919c75cc9d4712ba38a14bc1c01599
+Author: a1electronics <a1electronics@users.noreply.github.com>
+Date:   Fri Nov 21 20:08:38 2014 +0530
+
+    Fixed spelling mistake
+
+commit a684898e8f5ee0edd3f969a4bc72ae4a60d57e69
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Fri Nov 14 23:02:48 2014 +0530
+
+    Formatted
+
+commit 29b12bebf21b2e31b60d780a71be558957ada88a
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Fri Nov 14 23:00:16 2014 +0530
+
+    Updated the  README.md with instructions as how to build the app using STS
+
+commit 8fe8fbaa73a2234dc89de167aacbe291b7b51778
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Fri Nov 14 22:35:59 2014 +0530
+
+    Inital startup code for A1 shoping site
+
+commit 8ee6df5cb348d896e73dcfc6747c4a96a382a196
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Fri Nov 14 18:26:40 2014 +0530
+
+    Adding git ignore
+
+commit 4627acddf500baa6c3a0c54d048818b8b9ac04b6
+Author: Amit Shah <amit.shah@woi.aero>
+Date:   Fri Nov 14 15:13:39 2014 +0530
+
+    Updated Read.md
+
+commit f214de060797c7c694f4e317f855b0a56f997050
+Author: a1electronics <dummymailamit@gmail.com>
+Date:   Fri Nov 14 15:02:25 2014 +0530
+
+    Initial commit
+(END)

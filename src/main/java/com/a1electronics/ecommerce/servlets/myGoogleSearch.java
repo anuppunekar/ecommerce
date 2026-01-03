@@ -17,7 +17,7 @@ import org.apache.commons.httpclient.methods.GetMethod;
 /**
  * Servlet implementation class myGoogleSearch
  */
-@WebServlet("/myGoogleSearch")
+//@WebServlet("/myGoogleSearch")
 public class myGoogleSearch extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

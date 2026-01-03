@@ -34,11 +34,11 @@
 		<description>Search Yahoo.</description>
 		<display-name>myYahooSearch</display-name>
 		<servlet-name>myYahooSearch</servlet-name>
-		<servlet-class>myYahooSearch</servlet-class>
+		<servlet-class>com.a1electronics.ecommerce.servlets.myYahooSearch</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>myYahooSearch</servlet-name>
-		<url-pattern>/servlet/myYahooSearch</url-pattern>
+		<url-pattern>/myYahooSearch</url-pattern>
 	</servlet-mapping>
 	
 	<!-- Search Yahoo Images -->
@@ -46,11 +46,11 @@
 		<description>Search Yahoo Images.</description>
 		<display-name>myYahooImageSearch</display-name>
 		<servlet-name>myYahooImageSearch</servlet-name>
-		<servlet-class>myYahooImageSearch</servlet-class>
+		<servlet-class>com.a1electronics.ecommerce.servlets.myYahooImageSearch</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>myYahooImageSearch</servlet-name>
-		<url-pattern>/servlet/myYahooImageSearch</url-pattern>
+		<url-pattern>/myYahooImageSearch</url-pattern>
 	</servlet-mapping>
 	
 	<!-- Search Google -->
@@ -58,11 +58,11 @@
 		<description>Search Google.</description>
 		<display-name>myGoogleSearch</display-name>
 		<servlet-name>myGoogleSearch</servlet-name>
-		<servlet-class>myGoogleSearch</servlet-class>
+		<servlet-class>com.a1electronics.ecommerce.servlets.myGoogleSearch</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>myGoogleSearch</servlet-name>
-		<url-pattern>/servlet/myGoogleSearch</url-pattern>
+		<url-pattern>/myGoogleSearch</url-pattern>
 	</servlet-mapping>
 	
 	<welcome-file-list>

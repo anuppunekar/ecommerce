@@ -14,7 +14,7 @@
 	<properties>
 
 		<!-- Generic properties -->
-		<java.version>1.8</java.version>
+		<!-- <java.version>1.8</java.version> -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<jettyVersion>12.1.4</jettyVersion>
@@ -24,13 +24,27 @@
 
 
 	<dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
 
+<!--
 		<dependency>
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>tomcat-servlet-api</artifactId>
 			<version>7.0.30</version>
 			<scope>provided</scope>
 		</dependency>
+-->
 <!--
 Admin@DESKTOP-OIL4D90 MINGW64 /d/downloads/stsProjects/a1ecommerce (master)
 $ mvn package
@@ -131,11 +145,13 @@ $ mvn package
 			<artifactId>spring-context-support</artifactId>
 		</dependency>
 		<!-- Web -->
+		<!-- 
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -204,25 +220,44 @@ $ mvn package
 	<build>
 		<defaultGoal>install</defaultGoal>
 
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat7-maven-plugin</artifactId>
+					<version>2.1</version>
+					<configuration>
+						<server>tomcat-development-server</server>
+						<port>8888</port>
+						<path>/a1ecommerce</path>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.0</version>
+				<version>3.1</version>
 				<configuration>
 					<compilerArguments>
 						<Xlint />
 					</compilerArguments>
 					<verbose>true</verbose>
+					<source>17</source>
+					<target>17</target>
+					<!-- 
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+					-->
 					<showWarnings>true</showWarnings>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.3</version>
+				<version>3.3.2</version>
 				<configuration>
 					<warName>a1ecommerce</warName>
 				</configuration>

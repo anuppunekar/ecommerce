@@ -17,7 +17,7 @@ import org.apache.commons.httpclient.methods.GetMethod;
 /**
  * Servlet implementation class myYahooImageSearch
  */
-@WebServlet("/myYahooImageSearch")
+//@WebServlet("/myYahooImageSearch")
 public class myYahooImageSearch extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
