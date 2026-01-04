@@ -36,7 +36,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 						basePackages ="com.a1electronics.ecommerce.dao"
 						)
 @ComponentScan(basePackages = {"com.a1electronics.ecommerce.dao"})
-@PropertySource(value = { "classpath:application-local.properties" })
+@PropertySource(value = { "classpath:application.properties" })
 
 public class PersistenceContextConfig {
 	private static final Logger logger = LoggerFactory

@@ -10,15 +10,18 @@
 
 <div class="container">
 	<div id="header" class="col-md-12">
-		<h1>A1 electronics e-commerce site</h1>
+		<h1>A1 Electronics E-Commerce site</h1>
 	</div>
 	<div id="categories" class="col-md-3"></div>
 	<div id="products" class="col-md-9"></div>
 </div>
 
-<div id="templates" style="display:none;">
+<div id="templates" style="display:none">
 	<div id="categoryTemplate">
-		<div><div class='categoryName'></div><div class='categoryDescription'></div></div>
+		<div>
+			<div class='categoryName'></div>
+			<div class='categoryDescription'></div>
+		</div>
 	</div>
 	<div id="productTemplate">
 		<div class="col-md-4">
@@ -29,7 +32,7 @@
 			<div class='productDescription'></div>
 		</div>
 	</div>
-</div>>
+</div>
 <script type="text/javascript" src="assets/js/jquery-2.1.3.min.js" ></script>
 <script type="text/javascript" src="assets/js/app.js" ></script>
 </body>
