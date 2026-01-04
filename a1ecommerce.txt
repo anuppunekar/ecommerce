@@ -339,3 +339,124 @@ Date:   Mon Dec 29 00:46:05 2025 +0530
 commit 3d475533e94d0c62409e99d59692a87d56b7130c
 
 D:\stsProjects\a1ecommerce>   
+
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin>d:
+
+D:\>cd "D:\stsProjects\a1ecommerce"
+The system cannot find the path specified.
+
+D:\>cd "D:\stsProjects\a1ecommerce"
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" remote
+mashupapp
+origin
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" branch
+* devmashupapp
+  master
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" add .
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" status
+On branch devmashupapp
+Your branch is up-to-date with 'mashupapp/devmashupapp'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   pom.xml
+        modified:   src/main/java/com/a1electronics/ecommerce/servlets/myGoogleS
+earch.java
+        new file:   src/main/java/com/a1electronics/ecommerce/servlets/mySemanti
+cParse.java
+        new file:   src/main/java/com/a1electronics/ecommerce/servlets/myTwitter
+Search.java
+        modified:   src/main/java/com/a1electronics/ecommerce/servlets/myYahooIm
+ageSearch.java
+        modified:   src/main/java/com/a1electronics/ecommerce/servlets/myYahooSe
+arch.java
+        new file:   src/main/webapp/RESTfulClient.jsp
+        modified:   src/main/webapp/WEB-INF/web.xml
+        renamed:    src/main/webapp/views/index.html -> src/main/webapp/index.ht
+ml
+        new file:   src/main/webapp/prototype.js
+
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" commit -
+m "Created"
+[devmashupapp 8e06811] Created
+ 10 files changed, 7829 insertions(+), 33 deletions(-)
+ create mode 100644 src/main/java/com/a1electronics/ecommerce/servlets/mySemanti
+cParse.java
+ create mode 100644 src/main/java/com/a1electronics/ecommerce/servlets/myTwitter
+Search.java
+ create mode 100644 src/main/webapp/RESTfulClient.jsp
+ rename src/main/webapp/{views => }/index.html (86%)
+ create mode 100644 src/main/webapp/prototype.js
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" status  
+On branch devmashupapp
+Your branch is ahead of 'mashupapp/devmashupapp' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" push -u 
+mashupapp devmashupapp
+Username for 'https://github.com': anuppunekar
+Password for 'https://anuppunekar@github.com': 
+Counting objects: 22, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (22/22), 50.33 KiB | 0 bytes/s, done.
+Total 22 (delta 8), reused 1 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 7 local objects.
+To https://github.com/anuppunekar/ecommerce.git
+   5fc15ed..8e06811  devmashupapp -> devmashupapp
+Branch devmashupapp set up to track remote branch devmashupapp from mashupapp.  
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" status  
+On branch devmashupapp
+Your branch is up-to-date with 'mashupapp/devmashupapp'.
+nothing to commit, working directory clean
+
+D:\stsProjects\a1ecommerce>"D:\Program Files\Git\bin\git.exe" log   
+commit 8e06811e653ff9ea458d50b9280da57470316870
+Author: anuppunekar <anup.punekar@gmail.com>
+Date:   Mon Jan 5 01:14:32 2026 +0530
+
+    Created
+
+commit 5fc15ed2d8c46686ab64e61346152c46921b14bf
+Author: anuppunekar <anup.punekar@gmail.com>
+Date:   Sun Jan 4 00:30:08 2026 +0530
+
+    Created
+
+commit d922ceabe84b558bc84460251cee89f1728815b0
+Author: anuppunekar <anup.punekar@gmail.com>
+Date:   Sun Jan 4 00:20:45 2026 +0530
+
+    Created
+
+commit 269a4812092b406df50cca8eaa5ec13f9c32ee0d
+Author: anuppunekar <anup.punekar@gmail.com>
+Date:   Mon Dec 29 00:46:05 2025 +0530
+
+    Created
+
+commit 3d475533e94d0c62409e99d59692a87d56b7130c
+Author: Amol Pandit <amol.pandit@woi.aero>
+Date:   Thu Aug 13 21:29:14 2015 +0530
+
+    HTML for category & product listing added
+
+commit 3e7330bd81a8e61e59f733d66c92f57ff9efa8c4
+Author: Amit Shah <dummymailamit@gmail.com>
+Date:   Sat Aug 1 23:24:22 2015 +0530
+
+    Added database entries for H2. Added controllers/services to fetch products 
+
+D:\stsProjects\a1ecommerce>
+
