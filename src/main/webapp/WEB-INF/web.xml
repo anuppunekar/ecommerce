@@ -4,31 +4,27 @@
 <description>A1 Electronics ecommerce Application</description>
 
 	<!-- Semantic Parser -->
-	<!-- 
 	<servlet>
 		<description>Parse entry and get cloud tag.</description>
-		<display-name>MySemanticParse</display-name>
-		<servlet-name>MySemanticParse</servlet-name>
-		<servlet-class>MySemanticParse</servlet-class>
+		<display-name>mySemanticParse</display-name>
+		<servlet-name>mySemanticParse</servlet-name>
+		<servlet-class>com.a1electronics.ecommerce.servlets.mySemanticParse</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>MySemanticParse</servlet-name>
-		<url-pattern>/servlet/MySemanticParse</url-pattern>
+		<servlet-name>mySemanticParse</servlet-name>
+		<url-pattern>/mySemanticParse</url-pattern>
 	</servlet-mapping>
-	-->
 	<!-- Search Twitter -->
-	<!-- 
 	<servlet>
 		<description>Search Twitter.</description>
-		<display-name>MyTwitterSearch</display-name>
-		<servlet-name>MyTwitterSearch</servlet-name>
-		<servlet-class>MyTwitterSearch</servlet-class>
+		<display-name>myTwitterSearch</display-name>
+		<servlet-name>myTwitterSearch</servlet-name>
+		<servlet-class>com.a1electronics.ecommerce.servlets.myTwitterSearch</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>MyTwitterSearch</servlet-name>
-		<url-pattern>/servlet/MyTwitterSearch</url-pattern>
+		<servlet-name>myTwitterSearch</servlet-name>
+		<url-pattern>/myTwitterSearch</url-pattern>
 	</servlet-mapping>
-	-->
 	<!-- Search Yahoo -->
 	<servlet>
 		<description>Search Yahoo.</description>

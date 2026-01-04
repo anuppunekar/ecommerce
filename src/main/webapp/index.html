@@ -34,7 +34,8 @@
 		var entry = escape(document.searchForm.entry.value);
 		var params = "entry=" + entry;
 		new Ajax.Updater(myCloudResult,
-		'/RESTfulMashupSearch/servlet/MySemanticParse',
+		'/mySemanticParse',				
+		//'/RESTfulMashupSearch/servlet/MySemanticParse',
 		{method: 'post', parameters: params, asynchronous:false});
 		// Note that MySemanticParse sets a value in the session
 		// for these services to search for the top cloud value
@@ -44,6 +45,10 @@
 
 	function handleOnTitleBlur() {
 		var title = escape(document.searchForm.title.value);
+		if (document.searchForm.title.value == "") {
+			alert("Title can't be empty.");
+			return;
+		}
 		if (title != "") {
 			doYahooSearch(title);
 			doYahooImageSearch(title);
@@ -53,7 +58,8 @@
 	function doGoogleSearch() {
 		// We don't pass any parameters because the top cloud is set in
 		// the HttpSession object
-		new Ajax.Request('/RESTfulMashupSearch/servlet/MyGoogleSearch', {
+		//new Ajax.Request('/RESTfulMashupSearch/servlet/MyGoogleSearch', {
+		new Ajax.Request('/myGoogleSearch', {
 		method: 'get',
 		onSuccess: function(transport) {
 			// eval() is used to parse the response
@@ -88,7 +94,8 @@
 		// Clear result pannel
 		document.getElementById("myYahooResult").innerHTML = "";
 		// Search
-		new Ajax.Request('/RESTfulMashupSearch/servlet/MyYahooSearch?query=' + value, {
+		//new Ajax.Request('/RESTfulMashupSearch/servlet/MyYahooSearch?query=' + value, {
+		new Ajax.Request('/myYahooSearch?query=' + value, {
 		method: 'get',
 		onSuccess: function(transport) {
 			var yahooObject = eval('(' + transport.responseText + ')');
@@ -107,7 +114,8 @@
 			+ " target=_yaoo>" + yahooObject.ResultSet.Result[2].Title
 			+ "</a><br/>" + yahooObject.ResultSet.Result[2].Summary;
 			document.getElementById("myYahooResult").innerHTML = html;
-		}
+		},
+		onFailure: function() { alert('Something went wrong...'); }
 		});	
 	}
 		
@@ -115,7 +123,8 @@
 		// Clear result pannel
 		document.getElementById("myImageResult").innerHTML = "";
 		// Search
-		new Ajax.Request ('/RESTfulMashupSearch/servlet/MyYahooImageSearch?query=' + value, {
+		//new Ajax.Request ('/RESTfulMashupSearch/servlet/MyYahooImageSearch?query=' + value, {
+		new Ajax.Request ('/myYahooImageSearch?query=' + value, {
 			method: 'get',
 			onSuccess: function(transport) {
 				var yahooObject = eval('(' + transport.responseText + ')');
@@ -129,12 +138,14 @@
 				+ "></a>";
 			}
 			document.getElementById("myImageResult").innerHTML = html;
-			}
+			},
+			onFailure: function() { alert('Something went wrong...'); }
 		});
 	}
 
 	function doTwitterSearch() {
-		new Ajax.Request('/RESTfulMashupSearch/servlet/MyTwitterSearch', {
+		//new Ajax.Request('/RESTfulMashupSearch/servlet/MyTwitterSearch', {
+		new Ajax.Request('/myTwitterSearch', {
 			method: 'get',
 			onSuccess: function(transport) {
 			var twitterObject = eval('(' + transport.responseText + ')');
